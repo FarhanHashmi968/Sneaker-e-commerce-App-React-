@@ -1,0 +1,594 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Orange: hsl(26, 100%, 55%);
+  --Paleorange: hsl(25, 100%, 94%);
+  --Verydarkblue: hsl(220, 13%, 13%);
+  --Darkgrayishblue: hsl(219, 9%, 45%);
+  --Grayishblue: hsl(220, 14%, 75%);
+  --Lightgrayishblue: hsl(223, 64%, 98%);
+  --White: hsl(0, 0%, 100%);
+  --Black: hsl(0, 0%, 0%);
+}
+
+html {
+  /* 1rem = 16px */
+  /* 100% = 16px */
+  font-size: 95%;
+  /* overflow: hidden; */
+}
+
+body {
+  background-color: var(--White);
+  font-family: 'Kumbh Sans', sans-serif;
+  user-select: none;
+}
+
+.container {
+  padding: 0rem 8rem;
+}
+
+header {
+  display: flex;
+  height: 6rem;
+  align-items: center;
+  border-bottom: 1px solid var(--Grayishblue);
+}
+
+.menuBar {
+  display: none;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+.contentPart {
+  display: flex;
+  width: 40rem;
+  align-items: center;
+}
+
+.contentPart img {
+  width: 10rem;
+  height: 1.5rem;
+  margin-right: 4.5rem;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav ul li {
+  color: var(--Darkgrayishblue);
+  cursor: pointer;
+  transition: all 0.1s;
+}
+
+nav ul li:hover {
+  border-bottom: 4px solid var(--Orange);
+  line-height: 2rem;
+}
+
+.userPart {
+  width: 8rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.cartImg {
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+}
+
+.userImg {
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+}
+
+.userImg:hover {
+  border: 3px solid var(--Orange);
+  border-radius: 50%;
+}
+
+main {
+  display: flex;
+  padding: 5rem 2rem;
+  width: 100%;
+}
+
+.imagePart {
+  width: 50%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.fg {
+  width: 23rem;
+}
+
+.mainImage {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+}
+
+.mainImage img {
+  width: 100%;
+  border-radius: 16px;
+}
+
+.thumbnailImg {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  align-items: center;
+}
+
+.thumbnailImg img {
+  width: 4.5rem;
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+.thumbnailImg img:hover {
+  filter: blur(0.5px);
+}
+
+.descriptionPart {
+  width: 50%;
+  padding: 5rem 2rem;
+}
+
+.logoName {
+  color: var(--Orange);
+  letter-spacing: 0.1rem;
+  margin-bottom: 1.1rem;
+}
+
+.descriptionPart h2 {
+  font-size: 2.5rem;
+  color: var(--Black);
+}
+
+.description {
+  color: var(--Darkgrayishblue);
+  margin-block: 2rem;
+  line-height: 1.5rem;
+}
+
+.rupeesSection {
+  display: flex;
+  align-items: center;
+}
+
+.rupees {
+  color: var(--Verydarkblue);
+  font-size: 2rem;
+  font-weight: 600;
+  margin-right: 1rem;
+}
+
+.discountPercentage {
+  color: var(--Orange);
+  background-color: var(--Paleorange);
+  border-radius: 6px;
+  padding: 0.3rem;
+  font-weight: 600;
+}
+
+.actualRupees {
+  margin-top: 0.5rem;
+  text-decoration: line-through;
+  color: var(--Grayishblue);
+}
+
+.exitSection {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bar {
+  width: 38%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--Lightgrayishblue);
+  height: 3rem;
+}
+
+.bar span {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.sign {
+  color: var(--Orange);
+  cursor: pointer;
+}
+
+.addButton {
+  width: 60%;
+  color: white;
+  background-color: var(--Orange);
+  padding: 1rem 4rem;
+  text-align: center;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.addButton:hover {
+  background-color: hsl(25, 100%, 66%);
+}
+
+.addButton img {
+  width: 1rem;
+}
+
+.exitCard {
+  background-color: var(--White);
+  padding: 1.5rem;
+  box-shadow: 0px 0px 10px var(--Darkgrayishblue);
+  position: absolute;
+  top: 85px;
+  border-radius: 10px;
+  right: 60px;
+  display: block;
+  z-index: 1000;
+}
+
+.cartheading {
+  border-bottom: 1px solid var(--Grayishblue);
+  padding-bottom: 1rem;
+  font-weight: 600;
+}
+
+.productDetail {
+  display: flex;
+  height: 3rem;
+  margin-block: 1.5rem;
+  justify-content: space-between;
+  width: 20rem;
+  align-items: center;
+}
+
+.imgproduct {
+  border-radius: 5px;
+  height: 100%;
+}
+
+.productDetail div {
+  color: var(--Darkgrayishblue);
+}
+
+.iconDelete {
+  cursor: pointer;
+}
+
+.totalCost {
+  color: var(--Black);
+  font-weight: 600;
+}
+
+.exitCard button {
+  width: 100%;
+  cursor: pointer;
+  color: var(--White);
+  background-color: var(--Orange);
+  border-radius: 7px;
+  padding: 1rem 0;
+  font-size: 1rem;
+}
+
+.cartNotification {
+  background-color: var(--Orange);
+  color: var(--White);
+  padding: 0.2rem;
+  border-radius: 10px;
+  position: absolute;
+  right: 12.5rem;
+  top: 1.3rem;
+  width: 1.5rem;
+  text-align: center;
+  display: none;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(3px);
+  z-index: 100;
+  transition: all 0.5s;
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.emptyClass {
+  margin-top: 2rem;
+  width: 10rem;
+  text-align: center;
+}
+
+.imagePartDisplay {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2000;
+}
+
+.fgDisplay {
+  width: 27rem;
+}
+
+.iconClose {
+  position: absolute;
+  top: -2.5rem;
+  left: 25rem;
+  width: 1.5rem;
+  cursor: pointer;
+  z-index: 3000;
+  background-color: var(--Lightgrayishblue);
+  padding: 0.2rem;
+  border-radius: 10%;
+}
+
+.iconPrevious {
+  position: absolute;
+  left: -1.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: var(--White);
+  border-radius: 50%;
+  padding: 0.8rem;
+  cursor: pointer;
+}
+
+.iconNext {
+  position: absolute;
+  right: -1.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: var(--White);
+  border-radius: 50%;
+  padding: 0.8rem;
+  cursor: pointer;
+}
+
+.iconNext:hover,
+.iconPrevious:hover,
+.iconClose:hover {
+  border: 2px solid var(--Orange);
+}
+
+.thumbnailImgDisplay {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  align-items: center;
+}
+
+.thumbnailImgDisplay img {
+  width: 4.5rem;
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+.thumbnailImgDisplay img:hover {
+  filter: blur(0.5px);
+}
+
+.active {
+  border: 3px solid var(--Orange);
+  border-radius: 16px;
+  filter: blur(0.5px);
+}
+
+.navCart {
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: 60%;
+  background-color: var(--White);
+  font-weight: 600;
+  font-size: 1.7rem;
+  padding: 1.5rem 1.5rem;
+  left: -300px;
+  opacity: 0;
+  visibility: hidden;
+  transition: left 0.5s ease, opacity 0.5s ease, visibility 0s 0.5s;
+  z-index: 1002;
+}
+
+.navCart img {
+  height: 1.5rem;
+}
+
+.navCart ul {
+  list-style-type: none;
+  margin-top: 2rem;
+}
+
+.navCart ul li {
+  margin-top: 1.5rem;
+}
+
+.showCard {
+  left: 0;
+  opacity: 1;
+  visibility: visible;
+  transition: left 0.5s ease, opacity 0.5s ease, visibility 0.5s;
+}
+
+.nextPreviousdiv {
+  position: absolute;
+  width: 100%;
+  padding: 0 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  top: 16rem;
+  display: none;
+}
+
+.previousImage,
+.nextImage {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: var(--White);
+  border-radius: 50%;
+  padding: 0.8rem;
+  cursor: pointer;
+}
+
+/* Adding responsiveness to the website */
+@media screen and (max-width: 1025px) {
+  html {
+    font-size: 90%;
+  }
+}
+
+@media screen and (max-width: 945px) {
+  html {
+    font-size: 80%;
+  }
+}
+@media screen and (max-width: 876px) {
+  html {
+    font-size: 70%;
+  }
+}
+
+@media screen and (max-width: 735px) {
+  html {
+    font-size: 60%;
+  }
+}
+@media screen and (max-width: 650px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  html {
+    font-size: 85%;
+  }
+  .menuBar {
+    display: flex;
+    margin-inline: 2rem;
+  }
+
+  .container {
+    padding: 0;
+  }
+  header {
+    border: 0;
+  }
+  nav ul {
+    display: none;
+  }
+
+  main {
+    display: block;
+    padding: 0;
+  }
+  .userPart {
+    width: 14rem;
+  }
+  .contentPart {
+    width: 30rem;
+  }
+  .cartNotification {
+    right: 5.1rem;
+  }
+  .imagePart {
+    width: 100%;
+  }
+  .thumbnailImg {
+    display: none;
+  }
+  .fg {
+    width: 100%;
+  }
+  .mainImage img {
+    border-radius: 0;
+    height: 22rem;
+    width: 33rem;
+  }
+  .descriptionPart {
+    width: 100%;
+    padding: 2rem 2rem;
+  }
+  .description {
+    margin-block: 1rem;
+  }
+  .exitSection {
+    display: block;
+    margin-top: 0;
+  }
+  .rupeesSection {
+    display: inline-block;
+  }
+  .actualRupees {
+    float: right;
+  }
+  .bar {
+    width: 100%;
+    margin-block: 0.5rem;
+  }
+  .addButton {
+    width: 100%;
+    font-size: 1.4rem;
+  }
+  .addButton img {
+    height: 1.3rem;
+    width: 1.8rem;
+  }
+  .descriptionPart p {
+    font-size: 1.2rem;
+  }
+  .exitCard {
+    padding: 1.5rem;
+    width: 90%;
+    right: 1.5rem;
+    font-size: 1.3rem;
+  }
+  .productDetail {
+    width: 100%;
+  }
+  .emptyClass {
+    width: 100%;
+  }
+  .nextPreviousdiv {
+    display: flex;
+  }
+}
