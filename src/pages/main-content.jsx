@@ -62,7 +62,7 @@ const Main = () => {
         <nav>
           <div className='menuBar'>
             <img
-              src={'/images/icon-menu.svg'}
+              src={'images/icon-menu.svg'}
               alt=''
               className='menuIcon'
               onClick={() => {
@@ -99,7 +99,7 @@ const Main = () => {
                       <div className='cartheading'>Cart</div>
                       <div className='productDetail'>
                         <img
-                          src='/images/image-product-1-thumbnail.jpg'
+                          src='images/image-product-1-thumbnail.jpg'
                           alt='imageLogo'
                           className='imgproduct'
                         />
@@ -112,7 +112,7 @@ const Main = () => {
                           </p>
                         </div>
                         <img
-                          src='/images/icon-delete.svg'
+                          src='images/icon-delete.svg'
                           alt=''
                           onClick={() => {
                             setCount(0)
@@ -147,7 +147,7 @@ const Main = () => {
           <div className='fg'>
             <div className='mainImage'>
               <img
-                src={'/images//image-product-1.jpg'}
+                src={'images//image-product-1.jpg'}
                 alt='image product 1'
                 className='mainImg'
               />
@@ -201,7 +201,7 @@ const Main = () => {
               </span>
             </div>
             <div className='addButton' onClick={showCartNotification}>
-              <img src={'/images//icon-cart.svg'} alt='' /> Add to cart
+              <img src={'images//icon-cart.svg'} alt='' /> Add to cart
             </div>
           </div>
         </div>
@@ -220,7 +220,7 @@ const Main = () => {
 
         <div className='navCart'>
           <img
-            src={'/images//icon-close.svg'}
+            src={'images//icon-close.svg'}
             alt=''
             className='closeNav'
             onClick={() => {
@@ -237,7 +237,7 @@ const Main = () => {
         </div>
         <div className='nextPreviousdiv'>
           <img
-            src={'/images/icon-previous.svg'}
+            src={'images/icon-previous.svg'}
             alt=''
             className='previousImage'
             onClick={() => {
@@ -253,7 +253,7 @@ const Main = () => {
             }}
           />
           <img
-            src={'/images/icon-next.svg'}
+            src={'images/icon-next.svg'}
             alt=''
             className='nextImage'
             onClick={() => {

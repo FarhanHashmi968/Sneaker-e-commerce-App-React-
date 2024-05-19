@@ -40,19 +40,19 @@ const ThumbnailLargeDisplay = ({
     <>
       <div className='imagePartDisplay'>
         <img
-          src={'/images//icon-close.svg'}
+          src={'images//icon-close.svg'}
           alt=''
           className='iconClose'
           onClick={closeThumbnailImage}
         />
         <img
-          src={'/images//icon-previous.svg'}
+          src={'images//icon-previous.svg'}
           alt=''
           className='iconPrevious'
           onClick={handleprevious}
         />
         <img
-          src={'/images//icon-next.svg'}
+          src={'images//icon-next.svg'}
           alt=''
           className='iconNext'
           onClick={handlenext}
